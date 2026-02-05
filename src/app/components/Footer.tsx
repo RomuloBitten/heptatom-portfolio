@@ -1,5 +1,8 @@
-import logo from "figma:asset/e5db17c71aac79e7b149f97cc422e4e5137557fc.png";
-import { Linkedin, Twitter, Github } from "lucide-react";
+import logo from "@/assets/e5db17c71aac79e7b149f97cc422e4e5137557fc.png";
+import { Linkedin, MessageCircle } from "lucide-react";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/romulo-mantovani";
+const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=351962934937";
 
 export function Footer() {
   return (
@@ -14,14 +17,11 @@ export function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="p-2 bg-gray-900 rounded-full text-gray-400 hover:text-[#00E676] hover:bg-gray-800 transition-all">
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-900 rounded-full text-gray-400 hover:text-[#00E676] hover:bg-gray-800 transition-all" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="#" className="p-2 bg-gray-900 rounded-full text-gray-400 hover:text-[#00E676] hover:bg-gray-800 transition-all">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="#" className="p-2 bg-gray-900 rounded-full text-gray-400 hover:text-[#00E676] hover:bg-gray-800 transition-all">
-              <Twitter className="w-5 h-5" />
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-900 rounded-full text-gray-400 hover:text-[#00E676] hover:bg-gray-800 transition-all" aria-label="WhatsApp">
+              <MessageCircle className="w-5 h-5" />
             </a>
           </div>
 
