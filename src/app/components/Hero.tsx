@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import photo from "figma:asset/9ceae61541f7e72bf181d09c7a61b575ea4f1825.png";
-import logo from "figma:asset/e5db17c71aac79e7b149f97cc422e4e5137557fc.png";
+import photo from "@/assets/9ceae61541f7e72bf181d09c7a61b575ea4f1825.png";
+import logo from "@/assets/e5db17c71aac79e7b149f97cc422e4e5137557fc.png";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
