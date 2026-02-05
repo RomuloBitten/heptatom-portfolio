@@ -1,4 +1,4 @@
-import { Smartphone, Code, Lightbulb, Database, Cpu, Users, Package, GitBranch, Sparkles } from "lucide-react";
+import { Smartphone, Code, Lightbulb, Database, Globe, Cpu } from "lucide-react";
 import { motion } from "motion/react";
 
 const services = [
@@ -18,34 +18,19 @@ const services = [
     description: "Strategic advice on mobile architecture, tech stack selection, and digital transformation.",
   },
   {
-    icon: Users,
-    title: "Team Leadership",
-    description: "Leading mobile teams: aligning with PM, PO, back-end; backlog grooming, tech decisions, and mentoring.",
+    icon: Globe,
+    title: "Web Development",
+    description: "Responsive and modern web applications to complement your mobile strategy.",
   },
   {
     icon: Database,
     title: "Backend Integration",
-    description: "Seamless integration with RESTful APIs, GraphQL, BFF, and cloud services.",
+    description: "Seamless integration with RESTful APIs, GraphQL, and cloud services.",
   },
   {
     icon: Cpu,
     title: "Performance Optimization",
     description: "Auditing and improving existing apps for speed, battery usage, and stability.",
-  },
-  {
-    icon: Package,
-    title: "Release Management",
-    description: "Owning release cycles, regressive testing, QA shift-left, and CI/CD with Fastlane, Jenkins, Bamboo.",
-  },
-  {
-    icon: GitBranch,
-    title: "Solution Architecture",
-    description: "Engineering and architectural designs, TDD documentation, and scalable mobile architectures (MVVM, VIPER).",
-  },
-  {
-    icon: Sparkles,
-    title: "AI Engineering",
-    description: "Leveraging AI-assisted development and code generation where it accelerates delivery and quality.",
   },
 ];
 
@@ -62,7 +47,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

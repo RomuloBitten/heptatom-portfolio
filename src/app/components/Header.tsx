@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import logo from "@/assets/e5db17c71aac79e7b149f97cc422e4e5137557fc.png";
+import logo from "figma:asset/e5db17c71aac79e7b149f97cc422e4e5137557fc.png";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
